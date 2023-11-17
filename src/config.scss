@@ -53,4 +53,10 @@ main {
 footer {
   grid-area: footer;
   background-color: $header-footer-clr;
+  color: $light-font-clr;
+
+  img {
+    height: 18px;
+    width: 18px;
+  }
 }
