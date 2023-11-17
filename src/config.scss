@@ -72,20 +72,27 @@ footer {
   display: grid;
   place-items: center;
   gap: 8px;
+  padding: 8px 0;
   position: relative;
   filter: $header-footer-opacity;
 
   p {
-    align-self: end;
     font-size: 0.9rem;
   }
 
   a {
-    align-self: start;
-
     img {
       height: 24px;
       width: 24px;
+    }
+  }
+
+  .attribution {
+    font-size: 0.7rem;
+
+    a {
+      text-decoration: none;
+      color: lighten($light-font-clr, 50%);
     }
   }
 }

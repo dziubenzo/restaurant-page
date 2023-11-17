@@ -16,6 +16,9 @@ function generatePageLayout() {
   a.href = 'https://github.com/dziubenzo/';
   a.target = '_blank';
   a.rel = 'noopener noreferrer';
+  const attributionPara = createP(``, 'attribution');
+  attributionPara.innerHTML =
+    'Photo by <a href="https://unsplash.com/@nickkarvounis?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Nick Karvounis</a> on <a href="https://unsplash.com/photos/rectangular-beige-wooden-tables-and-chair-Ciqxn7FE4vE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>';
   const liHome = createLi('Home', 'home');
   const liMenu = createLi('Menu', 'menu');
   const liContact = createLi('Contact', 'contact');
@@ -34,6 +37,7 @@ function generatePageLayout() {
   footer.append(p);
   footer.append(a);
   a.append(img);
+  footer.append(attributionPara);
 }
 
 export default generatePageLayout;
