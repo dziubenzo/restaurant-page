@@ -24,4 +24,13 @@ function createImg(src, alt) {
   return img;
 }
 
-export { createLi, createP, createImg };
+// Create div element with optional class
+function createDiv(className = '') {
+  const div = document.createElement('div');
+  if (className) {
+    div.classList.add(`${className}`);
+  }
+  return div;
+}
+
+export { createLi, createP, createImg, createDiv };

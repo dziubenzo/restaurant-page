@@ -19,25 +19,19 @@ function generatePageLayout() {
   const attributionPara = createP(``, 'attribution');
   attributionPara.innerHTML =
     'Photo by <a href="https://unsplash.com/@nickkarvounis?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Nick Karvounis</a> on <a href="https://unsplash.com/photos/rectangular-beige-wooden-tables-and-chair-Ciqxn7FE4vE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>';
-  const liHome = createLi('Home', 'home');
-  const liMenu = createLi('Menu', 'menu');
-  const liContact = createLi('Contact', 'contact');
+  const liHome = createLi('Home', 'home-tab');
+  const liMenu = createLi('Menu', 'menu-tab');
+  const liContact = createLi('Contact', 'contact-tab');
 
   // Add them to the DOM
-  container.append(header);
-  container.append(main);
-  container.append(footer);
+  container.append(header, main, footer);
 
   header.append(nav);
   nav.append(ul);
-  ul.append(liHome);
-  ul.append(liMenu);
-  ul.append(liContact);
+  ul.append(liHome, liMenu, liContact);
 
-  footer.append(p);
-  footer.append(a);
+  footer.append(p, a, attributionPara);
   a.append(img);
-  footer.append(attributionPara);
 }
 
 export default generatePageLayout;
