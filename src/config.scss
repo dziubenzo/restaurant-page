@@ -1,9 +1,38 @@
-$background-clr: red;
+$background-clr: #b3b3b3;
+$header-footer-clr: #323232;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
   background-color: $background-clr;
+  height: 100vh;
 }
 
 #container {
-  background-color: $background-clr;
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 5fr 1fr;
+  grid-template-areas: 
+   'header header header'
+   '.      main   .'
+   'footer footer footer';
+}
+
+header {
+  grid-area: header;
+  background-color: $header-footer-clr;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+  background-color: $header-footer-clr;
 }
