@@ -21,7 +21,7 @@ body {
   display: grid;
   height: 100vh;
   grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: 1fr 5fr 1fr;
+  grid-template-rows: 1fr 8fr 1fr;
   grid-template-areas: 
    'header header header'
    '.      main   .'
@@ -54,9 +54,20 @@ footer {
   grid-area: footer;
   background-color: $header-footer-clr;
   color: $light-font-clr;
+  display: grid;
+  place-items: center;
+  gap: 8px;
+
+  p {
+    align-self: end;
+  }
+
+  a {
+    align-self: start;
+  }
 
   img {
-    height: 18px;
-    width: 18px;
+    height: 24px;
+    width: 24px;
   }
 }

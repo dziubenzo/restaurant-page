@@ -19,6 +19,7 @@ function generatePageLayout() {
   const liHome = createLi('Home', 'home');
   const liMenu = createLi('Menu', 'menu');
   const liContact = createLi('Contact', 'contact');
+
   // Add them to the DOM
   container.append(header);
   container.append(main);
