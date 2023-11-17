@@ -4,8 +4,8 @@ import { createLi, createP, createImg, createDiv } from './utilities';
 
 function generateHomeContent() {
   const main = document.querySelector('main');
-  const home = createDiv('home');
-  main.append(home);
+  // const home = createDiv('home');
+  // main.append(home);
 }
 
 export default generateHomeContent;
