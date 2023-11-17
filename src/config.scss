@@ -4,6 +4,7 @@ $background-clr: #b3b3b3;
 $header-footer-clr: #323232;
 $light-font-clr: #cccccc;
 $font-stack: 'Josefin Sans', sans-serif;
+$header-footer-opacity: opacity(95%);
 
 * {
   box-sizing: border-box;
@@ -45,7 +46,7 @@ header {
   display: grid;
   place-items: center;
   position: relative;
-  filter: opacity(90%);
+  filter: $header-footer-opacity;
   
   ul {
     display: flex;
@@ -56,6 +57,7 @@ header {
   li {
     list-style-type: none;
     cursor: pointer;
+    font-size: 1.2rem;
   }
 }
 
@@ -71,10 +73,11 @@ footer {
   place-items: center;
   gap: 8px;
   position: relative;
-  filter: opacity(90%);
+  filter: $header-footer-opacity;
 
   p {
     align-self: end;
+    font-size: 0.9rem;
   }
 
   a {
