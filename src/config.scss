@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
 $background-clr: #b3b3b3;
 $header-footer-clr: #323232;
+$light-font-clr: #cccccc;
+$font-stack: 'Josefin Sans', sans-serif;
 
 * {
   box-sizing: border-box;
@@ -9,6 +13,7 @@ $header-footer-clr: #323232;
 
 body {
   background-color: $background-clr;
+  font-family: $font-stack;
   height: 100vh;
 }
 
@@ -26,6 +31,19 @@ body {
 header {
   grid-area: header;
   background-color: $header-footer-clr;
+  display: grid;
+  place-items: center;
+  
+  ul {
+    display: flex;
+    gap: 64px;
+    color: $light-font-clr;
+  }
+
+  li {
+    list-style-type: none;
+    cursor: pointer;
+  }
 }
 
 main {

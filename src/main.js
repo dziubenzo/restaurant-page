@@ -1,3 +1,4 @@
-import './config.scss'
+import './config.scss';
+import generatePageLayout from './page_layout';
 
-console.log('Testfggdffd');
+generatePageLayout();
