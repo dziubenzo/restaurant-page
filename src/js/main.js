@@ -5,7 +5,8 @@ import generateHomeContent from './home';
 import generateMenuContent from './menu';
 
 generatePageLayout();
-generateHomeContent();
+// generateHomeContent();
+generateMenuContent();
 
 const homeBtn = document.querySelector('.home-tab');
 const menuBtn = document.querySelector('.menu-tab');
