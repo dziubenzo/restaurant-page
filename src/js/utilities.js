@@ -33,4 +33,14 @@ function createDiv(className = '') {
   return div;
 }
 
-export { createLi, createP, createImg, createDiv };
+// Create h(1-6) element with optional class
+function createH(level, content, className = '') {
+  const h = document.createElement(`h${level}`);
+  h.textContent = content;
+  if (className) {
+    h.classList.add(`${className}`);
+  }
+  return h;
+}
+
+export { createLi, createP, createImg, createDiv, createH };

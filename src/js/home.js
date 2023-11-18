@@ -1,11 +1,13 @@
-import { createLi, createP, createImg, createDiv } from './utilities';
+import { createH } from './utilities';
 
 // Create home tab content
 
 function generateHomeContent() {
   const main = document.querySelector('main');
-  // const home = createDiv('home');
-  // main.append(home);
+  main.classList.add('home');
+  const heading = createH(1, 'Silesiana');
+  main.append(heading);
+
 }
 
 export default generateHomeContent;
