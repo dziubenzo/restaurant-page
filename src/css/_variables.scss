@@ -3,3 +3,19 @@ $header-footer-clr: rgb(51, 51, 51, 0.95);
 $light-font-clr: rgb(204, 204, 204);
 $dark-font-clr: rgb(52, 52, 52);
 $font-stack: 'Josefin Sans', sans-serif;
+
+@mixin tab-styling {
+  display: grid;
+  place-items: center;
+  color: $light-font-clr;
+  padding: 32px;
+  line-height: 1.5;
+}
+
+@mixin header-styling {
+  font-size: 4rem;
+  background: linear-gradient(90deg, $light-font-clr, rgb(136, 119, 119));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

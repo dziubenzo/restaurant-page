@@ -1,18 +1,10 @@
 @use 'variables' as *;
 
 main.home {
-  display: grid;
-  place-items: center;
-  color: $light-font-clr;
-  padding: 32px;
-  line-height: 1.5;
+  @include tab-styling;
 
   h1 {
-    font-size: 4rem;
-    background: linear-gradient(90deg, $light-font-clr, rgb(136, 119, 119));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    @include header-styling;
   }
 
   p[class*='paragraph-top'] {

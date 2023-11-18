@@ -1,4 +1,4 @@
-import { createH } from './utilities';
+import { createH, createDiv } from './utilities';
 
 // Create menu tab content
 function generateMenuContent() {
@@ -18,18 +18,23 @@ function generateMenuContent() {
     },
     {
       name: 'Hauskyjza',
-      description: 'Strongly flavored, home-made cheese with caraway seeds.',
+      description: 'Strongly flavoured, home-made cheese with caraway seeds.',
       price: 7.25,
     },
     {
       name: 'Makówki',
       description:
         'Dessert based on finely ground poppy seeds, with raisins, almonds, candied citrus peels, honey, sugar, and pudding, and flavoured with rum.',
-      price: 12.45,
+      price: 10.45,
     },
   ];
   const heading = createH(1, 'Menu');
-  main.append(heading);
+  const menu = createDiv('menu-items');
+  main.append(heading, menu);
+  menuItems.forEach((item, index) => {
+    const itemDiv = createDiv(`item-${index + 1}`);
+    menu.append(itemDiv);
+  });
 }
 
 export default generateMenuContent;
