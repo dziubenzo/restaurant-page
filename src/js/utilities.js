@@ -43,4 +43,14 @@ function createH(level, content, className = '') {
   return h;
 }
 
-export { createLi, createP, createImg, createDiv, createH };
+// Remove current tab, create a new one and add it to the DOM
+function removeTab() {
+  const main = document.querySelector('main');
+  const container = document.getElementById('container');
+  const footer = document.querySelector('footer');
+  main.remove();
+  const newMain = document.createElement('main');
+  container.insertBefore(newMain, footer);
+}
+
+export { createLi, createP, createImg, createDiv, createH, removeTab };
