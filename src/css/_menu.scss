@@ -13,9 +13,10 @@ main.menu {
 
     div {
       display: grid;
+      place-items: center;
 
       img {
-        width: 75%;
+        width: 60%;
         border-radius: 60px;
       }
     }

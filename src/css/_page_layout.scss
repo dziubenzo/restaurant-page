@@ -24,12 +24,12 @@ body {
 
   &::before {
     content: '';
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: center / cover url(../assets/nick-karvounis-unsplash.jpg);
+    background: center / cover url(../assets/nick-karvounis-unsplash.jpg) fixed;
     filter: grayscale(70%) opacity(50%);
   }
 }
