@@ -9,7 +9,7 @@ function createLi(content, className) {
 // Create p element with content and optional class
 function createP(content, className = '') {
   const p = document.createElement('p');
-  p.textContent = content;
+  p.innerHTML = content;
   if (className) {
     p.classList.add(`${className}`);
   }
