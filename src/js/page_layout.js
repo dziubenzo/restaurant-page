@@ -1,5 +1,5 @@
 import { createLi, createP, createImg } from './utilities';
-import logo from './assets/github-mark-white.svg';
+import logo from '../assets/github-mark-white.svg';
 
 // Create header (with content), main and footer (with content)
 function generatePageLayout() {

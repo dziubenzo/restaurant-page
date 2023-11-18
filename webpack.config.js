@@ -8,7 +8,7 @@ module.exports = {
     static: './src',
     open: true,
   },
-  entry: './src/main.js',
+  entry: './src/js/main.js',
   output: {
     filename: 'main.[contenthash].js',
     path: path.resolve(__dirname, 'dist'),
