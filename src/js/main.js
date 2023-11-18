@@ -2,6 +2,7 @@ import '../css/main.scss';
 import { changeTab, removeTab } from './utilities';
 import generatePageLayout from './page_layout';
 import generateHomeContent from './home';
+import generateMenuContent from './menu';
 
 generatePageLayout();
 generateHomeContent();
