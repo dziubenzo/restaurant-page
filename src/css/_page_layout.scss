@@ -1,10 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
-@import 'home';
-
-$background-clr: rgb(179, 179, 179);
-$header-footer-clr: rgb(51, 51, 51, 0.95);
-$light-font-clr: rgb(204, 204, 204);
-$font-stack: 'Josefin Sans', sans-serif;
+@use 'variables' as vars;
 
 * {
   box-sizing: border-box;
@@ -13,8 +7,8 @@ $font-stack: 'Josefin Sans', sans-serif;
 }
 
 body {
-  background-color: $background-clr;
-  font-family: $font-stack;
+  background-color: vars.$background-clr;
+  font-family: vars.$font-stack;
   height: 100vh;
 }
 
@@ -42,7 +36,7 @@ body {
 
 header {
   grid-area: header;
-  background-color: $header-footer-clr;
+  background-color: vars.$header-footer-clr;
   display: grid;
   place-items: center;
   position: relative;
@@ -50,7 +44,7 @@ header {
   ul {
     display: flex;
     gap: 64px;
-    color: $light-font-clr;
+    color: vars.$light-font-clr;
   }
 
   li {
@@ -63,15 +57,15 @@ header {
 main {
   grid-area: main;
   position: relative;
-  background-color: $header-footer-clr;
+  background-color: vars.$header-footer-clr;
   margin: 8px 0;
   border-radius: 48px;
 }
 
 footer {
   grid-area: footer;
-  background-color: $header-footer-clr;
-  color: $light-font-clr;
+  background-color: vars.$header-footer-clr;
+  color: vars.$light-font-clr;
   display: grid;
   place-items: center;
   gap: 8px;
@@ -94,7 +88,7 @@ footer {
 
     a {
       text-decoration: none;
-      color: lighten($light-font-clr, 50%);
+      color: lighten(vars.$light-font-clr, 50%);
     }
   }
 }
