@@ -15,30 +15,32 @@ main.menu {
 
     div {
       display: grid;
+      grid-template-rows: 1fr 4fr 75px 1fr;
       place-items: center;
       gap: 16px;
       padding: 8px;
-      outline: 1px dashed $light-font-clr;
+      outline: 1px solid $menu-item-border-clr;
       border-radius: 16px;
       text-align: center;
 
       .name {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         font-weight: bold;
       }
 
       .description {
-        font-size: 0.9rem;
+        font-size: 1rem;
+        font-style: italic;
       }
 
       .price {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         font-weight: bold;
         letter-spacing: 2px;
       }
 
       img {
-        width: 50%;
+        width: 75%;
         border-radius: 60px;
       }
     }
