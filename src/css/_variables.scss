@@ -20,3 +20,8 @@ $font-stack: 'Josefin Sans', sans-serif;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.selected {
+  font-weight: bold;
+  color: lighten($light-font-clr, 50%);
+}

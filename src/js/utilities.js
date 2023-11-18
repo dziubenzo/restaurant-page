@@ -53,4 +53,30 @@ function removeTab() {
   container.insertBefore(newMain, footer);
 }
 
-export { createLi, createP, createImg, createDiv, createH, removeTab };
+// Highlight selected tab
+function highlightTab() {
+  const tabs = document.querySelectorAll('li');
+  const main = document.querySelector('main');
+  // Remove previously highlighted tab
+  tabs.forEach((tab) => {
+    tab.classList.remove('selected');
+  });
+  // Highlight current tab
+  if (main.classList.contains('home')) {
+    tabs[0].classList.add('selected');
+  } else if (main.classList.contains('menu')) {
+    tabs[1].classList.add('selected');
+  } else {
+    tabs[2].classList.add('selected');
+  }
+}
+
+export {
+  createLi,
+  createP,
+  createImg,
+  createDiv,
+  createH,
+  removeTab,
+  highlightTab,
+};
