@@ -13,7 +13,7 @@ body {
 
 #container {
   display: grid;
-  height: 100vh;
+  min-height: 100vh;
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: 100px 1fr 100px;
   grid-template-areas:
@@ -38,9 +38,9 @@ header {
   background-color: $header-footer-clr;
   display: grid;
   place-items: center;
-  position: relative;
-  // position: sticky;
-  // top: 0;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 
   ul {
     display: flex;
@@ -76,7 +76,8 @@ footer {
   place-items: center;
   gap: 8px;
   padding: 8px 0;
-  position: relative;
+  position: sticky;
+  bottom: 0;
 
   p {
     font-size: 0.9rem;
