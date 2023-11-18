@@ -1,7 +1,7 @@
 import { createH, createDiv, createImg, createP } from './utilities';
 import kluski from '../assets/kluski.jpg';
 import wodzionka from '../assets/wodzionka.webp';
-import hauskyjza from '../assets/hauskyjza.jpg';
+import hauskyjza from '../assets/hauskyjza.png';
 import makowki from '../assets/makowki.webp';
 
 // Create menu tab content
@@ -10,9 +10,9 @@ function generateMenuContent() {
   main.classList.add('menu');
   const menuItems = [
     {
-      name: 'Kluski śląskie, rolada i modra kapusta',
+      name: 'Kluski śląskie',
       description:
-        'Round dumplings served with gravy, best-quality beef-meat roll (stuffed with pickled vegetable, ham, and good amount of seasoning) and red cabbage (with fried bacon, fresh onion and allspice).',
+        'Round dumplings, best-quality beef-meat roll (stuffed with seasoned pickled vegetable and ham) and red cabbage.',
       price: 17.75,
       image: kluski,
     },
@@ -44,7 +44,7 @@ function generateMenuContent() {
     menu.append(itemDiv);
     const name = createP(item.name, 'name');
     const description = createP(item.description, 'description')
-    const price = createP(`${item.price} Jupitos`, 'price')
+    const price = createP(`${item.price} 🪐`, 'price')
     const img = createImg(item.image, item.name);
     itemDiv.append(name, img, description, price);
   });
