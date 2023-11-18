@@ -29,6 +29,7 @@ function generateMenuContent() {
     },
   ];
   const heading = createH(1, 'Menu');
+  main.append(heading);
 }
 
 export default generateMenuContent;
