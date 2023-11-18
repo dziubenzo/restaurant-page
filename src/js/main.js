@@ -3,10 +3,11 @@ import { removeTab, highlightTab } from './utilities';
 import generatePageLayout from './page_layout';
 import generateHomeContent from './home';
 import generateMenuContent from './menu';
+import generateContactContent from './contact';
 
 generatePageLayout();
 // generateHomeContent();
-generateMenuContent();
+generateContactContent();
 highlightTab();
 
 const homeBtn = document.querySelector('.home-tab');
@@ -27,5 +28,6 @@ menuBtn.addEventListener('click', () => {
 
 contactBtn.addEventListener('click', () => {
   removeTab();
+  generateContactContent();
   highlightTab();
 });
