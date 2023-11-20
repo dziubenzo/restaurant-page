@@ -79,3 +79,33 @@
     }
   }
 }
+
+@media screen and (width <= 775px) and (orientation: landscape) {
+  #container {
+    grid-template-rows: 50px 1fr 100px;
+    grid-template-areas:
+      'header header header'
+      'main   main   main'
+      'footer footer footer';
+  }
+
+  main {
+    margin: 16px;
+  }
+
+  footer {
+    gap: 0px;
+    position: relative;
+    bottom: none;
+  }
+
+  main.menu {
+    .menu-items {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+  }
+
+  main {
+    gap: 16px;
+  }
+}
