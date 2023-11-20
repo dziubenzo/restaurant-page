@@ -7,7 +7,8 @@ import generateContactContent from './contact';
 
 generatePageLayout();
 // generateHomeContent();
-generateContactContent();
+// generateContactContent();
+generateMenuContent();
 highlightTab();
 
 const homeBtn = document.querySelector('.home-tab');

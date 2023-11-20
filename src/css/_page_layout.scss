@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   background-color: $background-clr;
   font-family: $font-stack;

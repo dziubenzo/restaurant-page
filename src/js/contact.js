@@ -11,8 +11,6 @@ function generateContactContent() {
   main.append(heading, contactDiv);
   const p = createP('You can find us there:');
   const img = createImg(jupiter, 'Our location: Jupiter');
-  const btnDiv = createDiv('buttons');
-  contactDiv.append(p, img, btnDiv);
   const btn1 = createBtn(
     'Book Table',
     'button',
@@ -25,7 +23,7 @@ function generateContactContent() {
     'book-shuttle-btn',
     'book-shuttle-btn'
   );
-  btnDiv.append(btn1, btn2);
+  contactDiv.append(p, img, btn1, btn2);
   return;
 }
 
