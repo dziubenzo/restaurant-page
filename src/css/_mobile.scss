@@ -108,4 +108,12 @@
   main {
     gap: 16px;
   }
+
+  main.contact {
+    .contact-content {
+      img {
+        width: 30%;
+      }
+    }
+  }
 }
