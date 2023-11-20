@@ -11,6 +11,7 @@ $font-stack: 'Josefin Sans', sans-serif;
   color: $light-font-clr;
   padding: 32px;
   line-height: 1.5;
+  animation: show-tab 1s;
 }
 
 @mixin header-styling {
@@ -19,6 +20,15 @@ $font-stack: 'Josefin Sans', sans-serif;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@keyframes show-tab {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .selected {

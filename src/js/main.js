@@ -6,9 +6,7 @@ import generateMenuContent from './menu';
 import generateContactContent from './contact';
 
 generatePageLayout();
-// generateHomeContent();
-// generateContactContent();
-generateMenuContent();
+generateHomeContent();
 highlightTab();
 
 const homeBtn = document.querySelector('.home-tab');

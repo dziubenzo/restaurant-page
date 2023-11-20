@@ -2,7 +2,6 @@
 
 main.contact {
   @include tab-styling;
-  line-height: 1.2;
 
   h1 {
     @include header-styling;
@@ -12,7 +11,7 @@ main.contact {
     display: grid;
     place-items: center;
     align-self: start;
-    gap: 24px;
+    gap: 32px;
 
     p {
       font-size: 1.2rem;
