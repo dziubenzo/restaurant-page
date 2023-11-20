@@ -2,6 +2,8 @@
 
 main.contact {
   @include tab-styling;
+  line-height: 1.2;
+  grid-template-rows: 1fr 2fr;
 
   h1 {
     @include header-styling;
@@ -10,12 +12,31 @@ main.contact {
   .contact-content {
     display: grid;
     place-items: center;
-    
+    align-self: start;
+    gap: 16px;
+
     p {
+      font-size: 1.2rem;
     }
 
     img {
       width: 50%;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 16px;
+
+      button {
+        font-family: $font-stack;
+        cursor: pointer;
+        height: 30px;
+        color: $dark-font-clr;
+        font-size: 1rem;
+        border: 1px solid $background-clr;
+        border-radius: 8px;
+        padding: 8px 12px;
+      }
     }
   }
 }

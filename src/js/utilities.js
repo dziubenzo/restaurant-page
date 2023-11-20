@@ -43,11 +43,12 @@ function createH(level, content, className = '') {
   return h;
 }
 
-// Create button with type, name and optional class
-function createBtn(type, name, className = '') {
+// Create button with content, type, name and optional class
+function createBtn(content, type, name, className = '') {
   const btn = document.createElement('button');
-  button.type = type;
-  button.name = name;
+  btn.textContent = content;
+  btn.type = type;
+  btn.name = name;
   if (className) {
     btn.classList.add(className);
   }
@@ -90,4 +91,5 @@ export {
   createH,
   removeTab,
   highlightTab,
+  createBtn,
 };

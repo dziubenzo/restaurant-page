@@ -1,4 +1,4 @@
-import { createH, createDiv, createP, createImg } from './utilities';
+import { createH, createDiv, createP, createImg, createBtn } from './utilities';
 import jupiter from '../assets/jupiter.png';
 
 // Create contact tab content
@@ -11,7 +11,21 @@ function generateContactContent() {
   main.append(heading, contactDiv);
   const p = createP('You can find us there:');
   const img = createImg(jupiter, 'Our location: Jupiter');
-  contactDiv.append(p, img);
+  const btnDiv = createDiv('buttons');
+  contactDiv.append(p, img, btnDiv);
+  const btn1 = createBtn(
+    'Book Table',
+    'button',
+    'book-table-btn',
+    'book-table-btn'
+  );
+  const btn2 = createBtn(
+    'Book Shuttle to Jupiter',
+    'button',
+    'book-shuttle-btn',
+    'book-shuttle-btn'
+  );
+  btnDiv.append(btn1, btn2);
   return;
 }
 
