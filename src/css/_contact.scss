@@ -1,5 +1,21 @@
 @use 'utilities' as *;
 
 main.contact {
-  background-color: red;
+  @include tab-styling;
+
+  h1 {
+    @include header-styling;
+  }
+
+  .contact-content {
+    display: grid;
+    place-items: center;
+    
+    p {
+    }
+
+    img {
+      width: 50%;
+    }
+  }
 }

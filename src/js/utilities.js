@@ -43,6 +43,17 @@ function createH(level, content, className = '') {
   return h;
 }
 
+// Create button with type, name and optional class
+function createBtn(type, name, className = '') {
+  const btn = document.createElement('button');
+  button.type = type;
+  button.name = name;
+  if (className) {
+    btn.classList.add(className);
+  }
+  return btn;
+}
+
 // Remove current tab, create a new one and add it to the DOM
 function removeTab() {
   const main = document.querySelector('main');
